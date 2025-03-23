@@ -28,13 +28,13 @@ public class InsuranceController {
         return insuranceService.createInsurance(insurance);
     }
 
-    @ResponseStatus(HttpStatus.CREATED)
+    @ResponseStatus(HttpStatus.OK)
     @GetMapping(path = "/list")
     public Mono<List<Insurance>> getInsuranceList (){
         return insuranceService.getInsuranceList();
     }
 
-    @ResponseStatus(HttpStatus.CREATED)
+    @ResponseStatus(HttpStatus.OK)
     @GetMapping(path = "/search")
     public Mono<List<Insurance>> searchInsurance (@RequestParam String searchTerm){
         return insuranceService.getSearchedInsurance(searchTerm);
