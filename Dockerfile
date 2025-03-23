@@ -1,6 +1,7 @@
 FROM ubuntu:20.04
 RUN apt-get update
 FROM openjdk:21
+RUN mvn clean install -DskipTests
 ENV ARTIFACTARG=${ARTIFACT}
 WORKDIR /
 COPY target/insurance-0.0.1-SNAPSHOT.jar	/insurance-0.0.1-SNAPSHOT.jar
