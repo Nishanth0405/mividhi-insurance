@@ -1,0 +1,22 @@
+server:
+  port: 8010
+
+spring:
+  profiles:
+    active: default
+  #  profiles:
+  #    active: stage
+  webflux:
+    base-path: /insurance
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: mongodb+srv://Nishanth:Qtkda0gTZSc41EpX@cluster0.f9nahgw.mongodb.net/mivdhi
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+
+
