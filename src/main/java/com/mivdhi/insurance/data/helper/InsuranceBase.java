@@ -15,4 +15,5 @@ public class InsuranceBase {
     private Double premium;
     private Double coverage;
     private InsuranceType type;
+    private String typeLabel;
 }
