@@ -17,7 +17,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/insurance")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://mivdhi-front-end-docker.onrender.com")
 public class InsuranceController {
 
     private final InsuranceService insuranceService;
